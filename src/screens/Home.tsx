@@ -1,7 +1,7 @@
 import { Component, For, createSignal, createUniqueId } from 'solid-js';
 import { FaRegularImage } from 'solid-icons/fa';
-import MainLayout from '../layouts';
-import GlidePost from '../glides/GlidePost';
+import MainLayout from '../components/layouts';
+import GlidePost from '../components/glides/GlidePost';
 
 const HomeScreen: Component = () => {
 
