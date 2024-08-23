@@ -1,10 +1,7 @@
-import { AiOutlineHome } from 'solid-icons/ai';
-import { CgProfile, CgMoreO } from 'solid-icons/cg';
-import { IoNotificationsCircleOutline } from 'solid-icons/io';
-import { RiMapCompassDiscoverLine } from 'solid-icons/ri';
 import { FiMoreHorizontal } from 'solid-icons/fi';
 import { Component, For } from 'solid-js';
 import { links } from './links';
+import { A } from '@solidjs/router';
 
 const MainSidebar: Component = () => {
     return (
@@ -23,7 +20,7 @@ const MainSidebar: Component = () => {
 
                                     <For each={links}>
                                         {(link) =>
-                                            <a class='flex-it items-start flex-grow w-full' href={link.href}>
+                                            <A class='flex-it items-start flex-grow w-full' href={link.href}>
                                                 <div class='p-3 flex-row justify-center items-center flex-it rounded-3xl hover:bg-gray-800 hover:rounded-3xl transition duration-200'>
                                                     <div class='flex-it'>
                                                         {link.icon()}
@@ -32,7 +29,7 @@ const MainSidebar: Component = () => {
                                                         <span class='truncate'>{link.name}</span>
                                                     </div>
                                                 </div>
-                                            </a>}
+                                            </A>}
                                     </For>
                                 </nav>
                             </div>
