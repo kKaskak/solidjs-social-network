@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@solidjs/router':
+        specifier: ^0.14.3
+        version: 0.14.3(solid-js@1.8.11)
       solid-icons:
         specifier: ^1.1.0
         version: 1.1.0(solid-js@1.8.11)
@@ -557,6 +560,11 @@ packages:
     resolution: {integrity: sha512-11ypVbp987XxETeRqY5Y3OmmTpm8/jZqJXRvo6AyqBthzkvvjEdReuUMU2yVb+pwWGxfZpWHZ6EUCcGXUMhfwg==}
     peerDependencies:
       solid-js: ^1.6.12
+
+  '@solidjs/router@0.14.3':
+    resolution: {integrity: sha512-9p4k4zL2baK/1XRQALbFcaQ4IikjkWmxqYQtFqLzjONUejhL1uqJHtzxB4tZjmNqtRANVRnTDbJfzjvaD9k+pQ==}
+    peerDependencies:
+      solid-js: ^1.8.6
 
   '@tailwindcss/forms@0.5.7':
     resolution: {integrity: sha512-QE7X69iQI+ZXwldE+rzasvbJiyV/ju1FGHH0Qn2W3FKbuYtqp8LKcy6iSw79fVUT5/Vvf+0XgLCeYVG+UV6hOw==}
@@ -1695,6 +1703,10 @@ snapshots:
       solid-js: 1.8.11
 
   '@solid-primitives/utils@6.2.2(solid-js@1.8.11)':
+    dependencies:
+      solid-js: 1.8.11
+
+  '@solidjs/router@0.14.3(solid-js@1.8.11)':
     dependencies:
       solid-js: 1.8.11
 
